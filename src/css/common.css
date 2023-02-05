@@ -16,3 +16,37 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+.timer{
+  display: flex;
+  margin-top: 15px;
+  gap: 27px;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  border: outset rgb(88, 51, 255);
+  padding: 5px;
+}
+
+.btn{
+  padding: 10px 20px ;
+  font-weight: 700;
+  font-size: 18px;
+
+  border: outset rgb(88, 51, 255);
+}
+
+.inputp{
+  padding: 10px 20px ;
+  font-weight: 700;
+  font-size: 18px;
+
+  border: outset rgb(88, 51, 255);
+}
