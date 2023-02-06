@@ -24,6 +24,9 @@ createBtn.addEventListener('click', event => {
   let delayValue = Number(delay.value);
   let stepValue = Number(step.value);
   let amountValue = Number(amount.value);
+  if(delayValue < 0 || stepValue < 0 || amountValue <= 0 ){
+    return  Notiflix.Notify.failure('Please enter values ​​greater than zero')
+  }
   for (let i = 0; i < amountValue; i += 1) {
     createPromise(1 + i, delayValue + i * stepValue)
       .then(({ position, delay }) => {
